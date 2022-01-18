@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 18:43:31 by scuter            #+#    #+#             */
-/*   Updated: 2022/01/18 11:23:24 by scuter           ###   ########.fr       */
+/*   Updated: 2022/01/18 11:25:21 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static t_stack	*parse_stack(char **argv)
 		{
 			if ((!ft_isdigit(argv[0][i]) && argv[0][i] != '-') \
 				|| (argv[0][i] == '-' && i > 0) \
-				|| (argv[0][0] == 0 && !ft_isdigit(argv[0][1])))
+				|| (argv[0][0] == '-' && !ft_isdigit(argv[0][1])))
 				error(&stack);
 			i++;
 		}
