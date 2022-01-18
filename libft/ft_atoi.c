@@ -6,13 +6,13 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 12:36:59 by scuter            #+#    #+#             */
-/*   Updated: 2022/01/18 11:14:07 by scuter           ###   ########.fr       */
+/*   Updated: 2022/01/18 11:17:51 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_atoi(const char *str)
+long long	ft_atoi(const char *str)
 {
 	size_t	sum;
 	size_t	i;
