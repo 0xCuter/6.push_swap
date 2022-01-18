@@ -6,7 +6,7 @@
 /*   By: scuter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 14:09:50 by scuter            #+#    #+#             */
-/*   Updated: 2022/01/18 10:26:42 by scuter           ###   ########.fr       */
+/*   Updated: 2022/01/18 10:53:02 by scuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,8 @@ void	minmax_sort(t_data	*data)
 	int		i;
 
 	i = 0;
+	if (is_sorted(data->stack_a))
+		return ;
 	while (i < data->count)
 	{
 		if (data->stack_a->index <= data->count / 2)
